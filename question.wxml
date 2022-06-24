@@ -1,0 +1,40 @@
+<movable-area class="movable-area">
+    <movable-view class="movable-view" direction="all" catchtap="toAddConsult" >
+      <view class="plus-position" bindtap="openAddPage">+</view>
+    </movable-view>
+</movable-area>
+
+<view class="tab">
+        <view class="tab-item {{currentTab==0?'on':''}}" bindtap="changeItem" data-current="0">未解决</view>
+        <view class="tab-item {{currentTab==1?'on':''}}" bindtap="changeItem" data-current="1">已解决</view>
+</view>
+<view class="content">
+    <swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange"> 
+      <swiper-item>
+      <view>
+        <view wx:for="{{question}}" wx:key="_id">
+		<view class="demo"> 
+		<vant-cell-group inset>
+  			<text style="font-weight: bold; color: brown;" decode="true">&nbsp;&nbsp;&nbsp;问题</text>
+  			<vant-cell  title="{{item.question}}" />
+		</vant-cell-group>
+		</view>     
+        </view>
+      </view>
+      </swiper-item>
+      <swiper-item>
+        <view>
+            <view wx:for="{{solve}}" wx:key="_id">   
+			<view class="demo">
+            <text style="font-weight: bold; color:brown">问题：</text><label>{{item.question}}</label>
+			<vant-divider></vant-divider>
+			<text style="font-weight: bold; color:brown ">\n回复:</text><label>{{item.comment}}</label>
+			</view>
+        </view>
+       </view>
+      </swiper-item>
+    
+    
+    </swiper>
+</view>
+    

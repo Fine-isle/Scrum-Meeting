@@ -1,0 +1,10 @@
+<!--pages/myself/myself.wxml-->
+<view class="container">
+    <view><vant-image round width="6rem" height="6rem" src="https://img.yzcdn.cn/vant/cat.jpeg"/></view>
+	<view >荔枝</view>
+</view>
+<vant-cell-group inset>
+ <vant-cell title="修改密码" is-link/>
+ <vant-cell  title="个人信息" is-link/>
+ <vant-cell title="联系我们" is-link/>
+</vant-cell-group>

@@ -1,0 +1,12 @@
+<!--pages/map/map.wxml-->
+<map
+	style="width:100%;height: 350px;"
+	markers="{{markers}}"
+	latitude="{{markers[0].latitude}}"
+	longitude="{{markers[0].longitude}}"
+></map>
+<view class="button">
+<vant-button   class="buttion1" block  bindtap="getDang">党员之家</vant-button>
+<vant-button block   bindtap="getClean">卫生模范</vant-button>
+<vant-button block   bindtap="getOld">独居老人</vant-button>
+</view>

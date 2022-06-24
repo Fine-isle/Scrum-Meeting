@@ -1,0 +1,62 @@
+<!--pages/goods_list/index.wxml-->
+<vant-notice-bar
+  left-icon="volume-o"
+  text="本周六是一年一度的荔枝节!欢迎全体村民前来人民广场品尝！"
+/>
+
+<!-- 标签页开始 -->
+<Tabs tabs="{{tabs}}" binditemChange="handelTabsItemChange">
+  <block wx:if="{{tabs[0].isActive}}">
+
+    <view class="news" data-newsid="1002" bindtap="showDetail">
+   <view class="pic-words">
+    <view class="news-title title-words">庆祝中国共产党成立100周年</view>
+    <image src="./images/1.jpg" class="cover"></image>
+   </view>
+    <view class="publish">
+       <view class="publisher">莲花村</view>
+       <view class="create-time">2021-07-02 13:33:51</view>
+    </view>
+  </view>
+
+  <view class="news" data-newsid="1002" bindtap="showDetail">
+   <view class="pic-words">
+    <view class="news-title title-words">举办党务知识专题培训会</view>
+    <image src="./images/4.jpeg" class="cover"></image>
+   </view>
+    <view class="publish">
+       <view class="publisher">莲花村</view>
+       <view class="create-time">2022-5-17 20:27:21</view>
+    </view>
+  </view>
+
+  </block>
+
+  <block wx:if="{{tabs[1].isActive}}">
+    <view class="news" data-newsid="1002" bindtap="showDetail">
+   <view class="pic-words">
+    <view class="news-title title-words">村干部关爱空巢老人一览表</view>
+    <image src="./images/5.jpg" class="cover"></image>
+   </view>
+    <view class="publish">
+       <view class="publisher">莲花村</view>
+       <view class="create-time">2022-3-15 12:50:21</view>
+    </view>
+  </view>
+  </block>
+
+  <block wx:if="{{tabs[2].isActive}}">
+    <view class="news" data-newsid="1002" bindtap="showDetail">
+   <view class="pic-words">
+    <view class="news-title title-words">莲花村年度财务总结报告</view>
+    <image src="./images/6.webp" class="cover"></image>
+   </view>
+    <view class="publish">
+       <view class="publisher">莲花村</view>
+       <view class="create-time">2022-1-18 19:20:21</view>
+    </view>
+  </view>
+  </block>
+</Tabs>
+<!-- 标签页结束 -->
+ 

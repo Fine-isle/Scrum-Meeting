@@ -1,0 +1,13 @@
+/* pages/map/map.wxss */
+/**index.wxss**/
+button {
+	margin-bottom :5px;
+}
+.map{
+	height: 30vh;
+	width: 100%;
+}
+.buttion1{
+	margin-top: 5;
+}
+

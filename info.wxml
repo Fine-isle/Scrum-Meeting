@@ -1,0 +1,121 @@
+<!--pages/goods_list/index.wxml-->
+
+
+<!-- 标签页开始 -->
+<Tabs tabs="{{tabs}}" binditemChange="handelTabsItemChange">
+  <block wx:if="{{tabs[0].isActive}}">
+    <navigator url="../info_detail/info_detail">
+    <view class="view_tupian_wenzi">
+      <image class="image_1" src="../image/info/3.jpeg " />
+      <view class="view_wenzi2">
+        <text>姓名：张三</text>
+        <text>职务：村委会主任</text>
+        <text>联系方式：13814381438</text>
+        <text>办公点：村街道办事处201号</text>
+      </view>
+    </view>
+  </navigator>
+  <navigator url="../info/info">
+    <view class="view_tupian_wenzi">
+      <image class="image_1" src="../image/info/1.jpeg " />
+      <view class="view_wenzi2">
+        <text>姓名：李四</text>
+        <text>职务：村委会副主任</text>
+        <text>联系方式：13814381438</text>
+        <text>办公点：村街道办事处201号</text>
+      </view>
+    </view>
+    </navigator>
+    <navigator url="../info/info">
+    <view class="view_tupian_wenzi">
+      <image class="image_1" src="../image/info/2.jpeg " />
+      <view class="view_wenzi2">
+        <text>姓名：张三</text>
+        <text>职务：村委会委员</text>
+        <text>联系方式：13814381438</text>
+        <text>办公点：村街道办事处201号</text>
+      </view>
+    </view>
+    </navigator>
+  </block>
+
+  <block wx:if="{{tabs[1].isActive}}">
+    <view class="view_tupian_wenzi">
+      <image class="image_1" src="../image/info/3.jpeg " />
+      <view class="view_wenzi2">
+        <text>姓名：张三</text>
+        <text>职务：党委书记</text>
+        <text>联系方式：13814381438</text>
+        <text>办公点：村街道办事处201号</text>
+      </view>
+    </view>
+    <view class="view_tupian_wenzi">
+      <image class="image_1" src="../image/info/3.jpeg " />
+      <view class="view_wenzi2">
+        <text>姓名：张三</text>
+        <text>职务：党委副书记</text>
+        <text>联系方式：13814381438</text>
+        <text>办公点：村街道办事处201号</text>
+      </view>
+    </view>
+    <view class="view_tupian_wenzi">
+      <image class="image_1" src="../image/info/3.jpeg " />
+      <view class="view_wenzi2">
+        <text>姓名：张三</text>
+        <text>职务：宣传委员</text>
+        <text>联系方式：13814381438</text>
+        <text>办公点：村街道办事处201号</text>
+      </view>
+    </view>
+    <view class="view_tupian_wenzi">
+      <image class="image_1" src="../image/info/1.jpeg " />
+      <view class="view_wenzi2">
+        <text>姓名：张三</text>
+        <text>职务：组织委员</text>
+        <text>联系方式：13814381438</text>
+        <text>办公点：村街道办事处201号</text>
+      </view>
+    </view>
+    <view class="view_tupian_wenzi">
+      <image class="image_1" src="../image/info/2.jpeg " />
+      <view class="view_wenzi2">
+        <text>姓名：张三</text>
+        <text>职务：纪检委员</text>
+        <text>联系方式：13814381438</text>
+        <text>办公点：村街道办事处201号</text>
+      </view>
+    </view>
+    <view class="view_tupian_wenzi">
+      <image class="image_1" src="../image/info/3.jpeg " />
+      <view class="view_wenzi2">
+        <text>姓名：张三</text>
+        <text>职务：干事</text>
+        <text>联系方式：13814381438</text>
+        <text>办公点：村街道办事处201号</text>
+      </view>
+    </view>
+  </block>
+
+  <block wx:if="{{tabs[2].isActive}}">
+    <view class="view_tupian_wenzi">
+      <image class="image_1" src="../image/info/3.jpeg " />
+      <view class="view_wenzi2">
+        <text>姓名：张三</text>
+        <text>职务：纪委书记</text>
+        <text>联系方式：13814381438</text>
+        <text>办公点：村街道办事处201号</text>
+      </view>
+    </view>
+    <view class="view_tupian_wenzi">
+      <image class="image_1" src="../image/info/1.jpeg " />
+      <view class="view_wenzi2">
+        <text>姓名：张三</text>
+        <text>职务：纪委委员</text>
+        <text>联系方式：13814381438</text>
+        <text>办公点：村街道办事处201号</text>
+      </view>
+    </view>
+  </block>
+</Tabs>
+<!-- 标签页结束 -->
+ 

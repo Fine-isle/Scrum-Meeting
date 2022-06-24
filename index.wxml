@@ -1,0 +1,40 @@
+<!--内容发布页面-->
+<form bindsubmit="tijiao">
+  <view class="A" style="width: 710rpx;padding: 20rpx;"  >
+    <!-- 第一部分，板块+子类 -->
+    
+      <!-- 多列 -->
+
+
+    <!-- 第二部分，编辑内容 -->
+    <view class="wd-list" style="padding:20rpx;" >
+      <textarea  name="wbnr" placeholder="这一刻的想法..." bindinput="inputText" value='{{text}}' style="width:100%;color:#080100;" maxlength="299"  />
+      <view class="zs" style="display:flex;flex-direction:row-reverse;margin-right:15rpx" >
+        <text class="sy" style="font-size:85%;color:#656565" >{{sy}}</text>
+      </view>
+    </view>
+
+    <!-- 第四部分，添加图片 -->
+    <view class="wd-list" style="display:flex;flex-wrap:wrap;justify-content: space-around;" >
+      <view class="A41" wx:for="{{images}}" wx:for-item="item0" wx:for-index="index0" wx:key="index0" 
+      style="width:200rpx;height:200rpx;margin-bottom:15rpx;border-radius: 10rpx;overflow: hidden;position:relative">
+        <!-- 下面图片框 -->
+        <image src="{{item0}}"  mode="aspectFill" bindtap="previewImg" style="width:200rpx;height:200rpx" >
+        </image> 
+        <!-- 下面删除按钮 -->
+        <image src="/pages/image/dlt.png" bindtap="canceImg" style="width:46rpx;height:46rpx;position:absolute;right:0;top:0" data-index="{{index0}}" />  
+        
+      </view>
+      <!-- 下面是add -->
+      <view class="A42" style="background-color:#F5F7F9;width:200rpx;height:200rpx;border-radius: 10rpx;overflow: hidden;display:flex;justify-content:center;align-items:center" bindtap="chooseImg" wx:if="{{images.length<9}}" >
+        <image src="/pages/image/tp.png" style="width:200rpx;height:200rpx;" ></image>
+      </view>
+    </view>
+    <!-- <ad unit-id="adunit-96afd35ec97dcada"></ad> -->
+    <!-- 第六部分，提交按钮 -->
+	<button    style="display:flex; justify-content:center; width:40%;background-color:#1A5599;border-radius: 10rpx;overflow: hidden;color:#ffffff" bindtap="submit" size="mini" >立即发布</button>
+  </view>
+</form>
+
+<!-- 下面是用于图片压缩的画布 -->
+<canvas canvas-id='huabu'  style="position: absolute;left:5000px; top:0;width: {{Cwidth}}px; height: {{Cheight}}px" ></canvas>

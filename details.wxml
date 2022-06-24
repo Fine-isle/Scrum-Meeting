@@ -1,0 +1,20 @@
+<!--pages/details/details.wxml-->
+<view class="title">
+    “听党话，感恩党，跟党走”宣讲活动
+</view>
+
+<view class="publisher-info">
+    <image class="face" src="../image/swiper/wu.jpeg"></image>
+
+    <view class="words">
+    <view class="nickname">莲花村</view>
+    <view class="normal-info">
+       <view class="original">原创</view>
+       <view class="create-time">
+           发布于 2022-2-22 12:20:21
+       </view>
+    </view>
+    </view>
+</view>
+
+<rich-text class="news-desc" nodes="{{content1}}" space="emsp"></rich-text>

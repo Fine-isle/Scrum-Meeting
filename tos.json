@@ -1,0 +1,8 @@
+{
+    "usingComponents": {
+      "Tabs": "../Tabs/Tabs"
+    },
+    "navigationBarTitleText": "三公开",
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "dark"
+  }

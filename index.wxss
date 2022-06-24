@@ -1,0 +1,18 @@
+.wd-list{
+    margin: 15rpx;
+    padding:15rpx;
+    background-color:#ffffff;box-shadow:0px 2px 4px 2px #DDDDDD;border-width: 0rpx;border-radius:15rpx;overflow:hidden;
+}
+.imageItem{
+	width: 80px;
+	height: 80px;
+	margin: 10px;
+  }
+
+  .item{
+	width: 300px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+  }

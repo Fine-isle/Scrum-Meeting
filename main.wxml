@@ -1,0 +1,52 @@
+<import src="HotNewsCell/HotNewsCell.wxml" />
+<import src="GridIconCell/GridIconCell.wxml" />
+
+<!--index.wxml-->
+<view> 
+<swiper indicator-dots indicator-color="grey" indicator-active-color="green" autoplay interval="3000" circular >
+<swiper-item>
+<image src="../image/swiper/wu2.jpg"></image>
+</swiper-item>
+<swiper-item>
+<image src="../image/swiper/wu4.jpg"></image>
+</swiper-item>
+<swiper-item>
+<image src="../image/swiper/wu.jpeg"></image>
+</swiper-item>
+<swiper-item>
+<image src="../image/swiper/wu1.jpg"></image>
+</swiper-item>
+</swiper>
+  <view class="iconList-container">
+    <block wx:for="{{iconList}}" wx:for-item="item" wx:for-index="idx" wx:key="key">
+      <view class="iconList-container-block" catchtap="tapGridCell" data-icon-id="{{idx}}">
+        <template is="GridIconCell" data="{{...item}}"></template>
+      </view>
+    </block>
+  </view>
+  <view class="spaceSeparateView"></view>
+  <view class="yaowen-container">
+  </view> 
+  <vant-divider contentPosition="center" textColor="#1989fa">要闻</vant-divider>
+  <view class="news" data-newsid="1001" bindtap="showDetail">
+	<view class="pic-words">
+    <view class="news-title title-words">“听党话，感恩党，跟党走”宣讲活动</view>
+    <image src="./images/en.png" class="cover"></image>
+   </view>
+    <view class="publish">
+       <view class="publisher">莲花村</view>
+       <view class="create-time">2022-2-22 12:20:21</view>
+    </view>
+  </view>
+  <vant-divider hairline />
+  <view class="news" data-newsid="1002" bindtap="showDetail">
+   <view class="pic-words">
+    <view class="news-title title-words">努力开创百姓富生态美的新未来</view>
+    <image src="../tos/images/7.webp" class="cover"></image>
+   </view>
+    <view class="publish">
+       <view class="publisher">人民日报</view>
+       <view class="create-time">2022-6-20  10:17:38</view>
+    </view>
+  </view>
+</view>

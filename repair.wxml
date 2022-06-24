@@ -1,0 +1,13 @@
+<!--pages/repair/repair.wxml-->
+<block wx:for="{{list}}" wx:key="index">
+<!-- 包裹图片+两行文字 id="{{index}}"是给按下了那个item记录-->
+<vant-divider></vant-divider>
+<view class="view_tupian_wenzi" bindtap="click" id="{{index}}">
+  <!-- 包裹两行文字 -->
+  <view class="view_wenzi2">
+	<text class="text_big">{{item.name}}</text>	
+	<text class="text_small">{{item.content}}</text>
+	<button type="primary" class="" style="width:80px;height: 30px;font-size: 10px;display:flex;justify-content: center;flex-direction: row;margin: 5px;background-color: {{item.state==0?'green':'rgb(194, 184, 184)'}};" size="primary" >{{item.state==0?'接单':'已接单'}}</button>
+  </view>
+</view>
+</block>

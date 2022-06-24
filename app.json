@@ -1,0 +1,78 @@
+{
+  "pages":[
+	"pages/register/register",
+	"pages/main/main",	
+	"pages/question/question",
+	"pages/map/map", 
+	"pages/feedback/feedback",
+	"pages/info_detail/info_detail",
+	"pages/info/info",
+	 "pages/myself/myself", 
+	 "pages/repair/repair", 
+	 "pages/repair-details/repair-details",
+	 "pages/details/details",
+	"pages/Tabs/Tabs",
+	"pages/index/index",	
+    "pages/lt/lt",
+	"pages/logs/logs",
+	"pages/tos/tos",
+	"pages/things/things"
+  ],
+  "window":{
+    "navigationBarBackgroundColor": "#302f34",
+    "navigationBarTitleText": "云上",
+    "navigationBarTextStyle": "white",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#abadbb",
+    "selectedColor": "#0164a6",
+    "list": [
+      {
+        "pagePath": "pages/main/main",
+        "text": "首页",
+        "iconPath": "./pages/image/tab/zhengwu.png",
+        "selectedIconPath": "./pages/image/tab/zhengwu_selected.png"
+      },
+      {
+        "pagePath": "pages/lt/lt",
+        "text": "邻里共享",
+        "iconPath": "./pages/image/tab/bianmin.png",
+        "selectedIconPath": "./pages/image/tab/bianmin_selected.png"
+	  },
+	  {
+        "pagePath": "pages/tos/tos",
+        "text": "三公开",
+        "iconPath": "./pages/image/tab/gonggao .png",
+        "selectedIconPath": "./pages/image/tab/gonggao_selected.png"
+      },
+      {
+		  
+        "pagePath": "pages/myself/myself",
+        "text": "我的",
+        "iconPath": "./pages/image/tab/me.png",
+        "selectedIconPath": "./pages/image/tab/me_selected.png"
+	  }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "usingComponents": {
+	  "vant-button":"/miniprogram_npm/@vant/weapp/button/index",
+	  "vant-cell":"/miniprogram_npm/@vant/weapp/cell/index",
+	  "vant-steps":"/miniprogram_npm/@vant/weapp/steps/index",
+	  "vant-icon":"/miniprogram_npm/@vant/weapp/icon/index",
+	  "vant-cell-group":"/miniprogram_npm/@vant/weapp/cell-group/index",
+	  "vant-divider":"/miniprogram_npm/@vant/weapp/divider/index",
+	  "vant-image":"/miniprogram_npm/@vant/weapp/image/index",
+	  "vant-Empty":"/miniprogram_npm/@vant/weapp/goods-action",
+	  "vant-notice-bar":"/miniprogram_npm/@vant/weapp/notice-bar/index",
+	  "vant-field":"/miniprogram_npm/@vant/weapp/field/index",
+	  "vant-card":"/miniprogram_npm/@vant/weapp/card/index"
+	}
+}

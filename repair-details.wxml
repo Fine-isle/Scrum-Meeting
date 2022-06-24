@@ -1,0 +1,17 @@
+<!--pages/repair-details/repair-details.wxml-->
+<vant-divider contentPosition="center">订单详情</vant-divider>
+<vant-cell-group inset>
+ <vant-cell  title="物品名称" value="空调"/>
+ <vant-cell title="保修故障" value="损坏"/>
+ <vant-cell  title="联系电话" value="1323135434"/>
+ <vant-cell title="家庭住址" value="东村荔枝路222号"/>
+</vant-cell-group>
+<vant-divider contentPosition="center">接单人信息</vant-divider>
+ <vant-cell-group inset>
+ <vant-cell  title="接单人" value="王国富"/>
+ <vant-cell title="联系电话" value="13345453434"/>
+ <vant-cell title="接单时间" value="2022-06-15" />
+ <vant-cell  title="是否通过后台验证" value="是" />
+ <vant-cell  title="描述信息" label="积攒了10余年的维修经验，技术娴熟，修啥啥好，收费便宜,上门准时，感谢各位乡亲们的支持。"/>
+</vant-cell-group>
+ 

@@ -1,0 +1,5 @@
+/* pages/info_detail/info_detail.wxss */
+.a{
+	widows: 10px;
+	height:20px
+}

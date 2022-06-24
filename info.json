@@ -1,0 +1,8 @@
+{
+	"usingComponents": {
+	  "Tabs": "../Tabs/Tabs"
+	},
+	"navigationBarTitleText": "村委信息",
+	"enablePullDownRefresh": true,
+	"backgroundTextStyle": "dark"
+  }

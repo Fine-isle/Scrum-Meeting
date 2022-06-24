@@ -1,0 +1,20 @@
+<!--pages/things/things.wxml-->
+<view class="title">
+    庆祝中国共产党成立100周年
+</view>
+
+<view class="publisher-info">
+    <image class="face" src="../tos/images/3.png"></image>
+
+    <view class="words">
+    <view class="nickname">莲花村</view>
+    <view class="normal-info">
+       <view class="original">转载</view>
+       <view class="create-time">
+           发布于 2021-07-02 13:33:51
+       </view>
+    </view>
+    </view>
+</view>
+
+<rich-text class="news-desc" nodes="{{content1}}" space="emsp"></rich-text>
